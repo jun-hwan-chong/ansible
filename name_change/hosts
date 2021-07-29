@@ -1,7 +1,7 @@
-[School]
+[UEA]
 10.124.32.15 ansible_hostname=as01.MDF.f1.bldg1.EstatesAtEastRiverside.tx
 
-[School:vars]
+[UEA:vars]
 ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=jchong
