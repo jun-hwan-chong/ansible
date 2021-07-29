@@ -1,0 +1,13 @@
+---
+- name: Rename device
+  gather_facts: false
+  hosts: School
+
+  tasks:
+
+  - name: rename
+    ios_config:
+      lines: hostname {{ ansible_hostname }}
+  - name: save
+    ios_config:
+      save_when: modified
