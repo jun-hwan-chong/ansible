@@ -1,0 +1,11 @@
+---
+- name: Rename device
+  gather_facts: false
+  hosts: hosts
+
+  tasks:
+
+  - name: rename
+    dellos6_config:
+      lines: hostname {{ ansible_hostname }}
+      backup: yes
