@@ -5,4 +5,4 @@
 ansible_connection=network_cli
 ansible_network_os=dellos6
 ansible_user=jchong
-ansible_password=Justrave27
+ansible_password=
