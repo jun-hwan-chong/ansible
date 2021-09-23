@@ -1,0 +1,8 @@
+[cisco_wc]
+10.204.32.68
+
+[cisco_wc:vars]
+ansible_connection=network_cli
+ansible_network_os=ios
+ansible_user=jchong
+ansible_password=Justrave28
