@@ -4,10 +4,15 @@
   hosts: cisco_wc
 
   tasks:
+    #- name: Show hostname
+    #  ios_command:
+    #    commands: show run | i hostname
+    #  register: output1
+
     - name: Show 5G profile
       ios_command:
         commands: show run | s dot11 5ghz rf-profile Better_AP_5G
-      register: command_output
+      register: output2
 
     - debug:
-        var: command_output.stdout_lines
+        var: output2.stdout_lines
